@@ -29,7 +29,7 @@ const CoursesForm = ({ handleBack }) => {
     lessonFormation,
   }) => {
     axiosInstance
-      .post('/mail/course', {
+      .post('/api/sendEmail', {
         email,
         fullName: name,
         phoneNumber,

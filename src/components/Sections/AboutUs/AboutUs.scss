@@ -28,7 +28,7 @@
     @include breakpoint(tablet) {
       gap: 38px;
       display: flex;
-      align-items: start;
+      align-items: flex-start;
       justify-content: space-between;
       h3 {
         margin: 0;

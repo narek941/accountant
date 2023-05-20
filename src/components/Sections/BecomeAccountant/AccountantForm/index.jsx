@@ -28,7 +28,7 @@ const AccountantForm = ({ handleBack }) => {
     lessonFormation,
   }) => {
     axiosInstance
-      .post('/mail/accountant', {
+      .post('/api/sendEmail', {
         email,
         fullName: name,
         phoneNumber,

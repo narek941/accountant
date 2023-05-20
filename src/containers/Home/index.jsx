@@ -1,3 +1,4 @@
+import React from 'react';
 import { sectionsList } from 'utils/index';
 
 import styles from './Home.scss';
