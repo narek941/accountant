@@ -1,6 +1,6 @@
 import shortid from 'shortid';
 
-import { SearchIcon, ExcelIcon, ChartIcon } from '../icons';
+import { ExcelIcon, ChartIcon } from '../icons';
 
 export const coursesNavigationList = [
   {
@@ -67,38 +67,38 @@ export const coursesNavigationList = [
     },
   },
 
-  {
-    id: shortid.generate(),
-    Icon: SearchIcon,
-    title: 'advanced_accounting',
-    groupCourse: {
-      content: ['', '', ['', '']],
-      period: '',
-      lessons: '',
-      price: '',
-    },
-    personalCourse: {
-      content: ['', '', ['', '']],
-      period: '',
-      lessons: '',
-      price: '',
-    },
-  },
+  // {
+  //   id: shortid.generate(),
+  //   Icon: SearchIcon,
+  //   title: 'advanced_accounting',
+  //   groupCourse: {
+  //     content: ['', '', ['', '']],
+  //     period: '',
+  //     lessons: '',
+  //     price: '',
+  //   },
+  //   personalCourse: {
+  //     content: ['', '', ['', '']],
+  //     period: '',
+  //     lessons: '',
+  //     price: '',
+  //   },
+  // },
   {
     id: shortid.generate(),
     Icon: ExcelIcon,
     title: 'Microsoft Excel',
     groupCourse: {
-      content: ['', '', ['', '']],
-      period: '',
-      lessons: '',
-      price: '',
+      content: ['introduction_to_microsoft_1', 'introduction_to_microsoft_2', ['introduction_to_microsoft_3','introduction_to_microsoft_4','introduction_to_microsoft_5','introduction_to_microsoft_6','introduction_to_microsoft_7' ]],
+      period: 'course_microsoft_excel_individual_period',
+      lessons: 'course_microsoft_excel_individual_lessons',
+      price: 'course_microsoft_excel_individual_price',
     },
     personalCourse: {
-      content: ['', '', ['', '']],
-      period: '',
-      lessons: '',
-      price: '',
+      content: ['introduction_to_microsoft_1', 'introduction_to_microsoft_2', ['introduction_to_microsoft_3','introduction_to_microsoft_4','introduction_to_microsoft_5','introduction_to_microsoft_6','introduction_to_microsoft_7' ]],
+      period: 'course_microsoft_excel_individual_period',
+      lessons: 'course_microsoft_excel_individual_lessons',
+      price: 'course_microsoft_excel_individual_price',
     },
   },
 ];
