@@ -15,7 +15,7 @@ export async function sendMail(text) {
 
   var mailOptions = {
     from: 'accforms2345678@gmail.com',
-    to: 'qolyan@list.ru',
+    to: 'info@acc-accountant.am',
     subject: 'New message from website',
     text
   };

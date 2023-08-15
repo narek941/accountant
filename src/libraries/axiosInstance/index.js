@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const defaultOptions = {
-  baseURL: 'acc-accountant.am',
+  baseURL: '',
 };
 
 const axiosInstance = axios.create(defaultOptions);
