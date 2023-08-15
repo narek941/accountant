@@ -6,7 +6,7 @@ const handler = async (req, res) => {
       case "POST": {
         //Do some thing
         await sendMail(
-          "TEST"
+          JSON.stringify(req.body)
         );
         res.status(200).send("Success");
         break;
