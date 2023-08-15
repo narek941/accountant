@@ -1,10 +1,9 @@
-import React, { useState, useContext, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import { getCookie } from 'libraries/index';
 import { noop } from 'utils/index';
-import { I18nContext } from 'context/index';
 import { useOutsideClick } from 'hooks/index';
 
 import styles from './LanguageDrop.scss';
@@ -12,13 +11,13 @@ import styles from './LanguageDrop.scss';
 import { ArrowIcon } from '../../icons';
 
 const LanguageDrop = ({ data, handleFlags }) => {
-  const t = useContext(I18nContext);
   const ref = useRef(null);
   const [isLoad, setIsLoad] = useState(false);
 
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(data[0].index);
   const ActiveIcon = data[activeIndex].IconCircle;
+  const ActiveIconMain = data[activeIndex].Icon;
 
   useEffect(() => {
     const cookieLang = getCookie('next-i18next');
@@ -69,9 +68,7 @@ const LanguageDrop = ({ data, handleFlags }) => {
           [styles.header__open]: isOpen,
         })}
       >
-        <p className={styles.header__text}>
-          {isLoad && t(data[activeIndex].nativeCode)}
-        </p>
+        <p className={styles.header__text}>{isLoad && <ActiveIconMain />}</p>
         <ArrowIcon
           className={styles.header__icon}
           style={{ transform: `rotate(${!isOpen ? 180 : 0}deg)` }}

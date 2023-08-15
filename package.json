@@ -10,6 +10,7 @@
     "build": "next build",
     "clean": "rm -rf .next",
     "start": "next start ",
+    "server": "ts-node mail/server.js",
     "analyze": "cross-env ANALYZE=true npm run build",
     "start:staging": "cross-env NODE_ENV=production ENV=staging next",
     "start:production": "cross-env NODE_ENV=production ENV=production next",
@@ -33,7 +34,7 @@
     "country-flag-icons": "^1.4.0",
     "cross-env": "^7.0.2",
     "css-loader": "^6.7.3",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -54,7 +55,7 @@
     "next-transpile-modules": "^10.0.0",
     "next-with-error": "^1.2.0",
     "nextjs-progressbar": "0.0.6",
-    "nodemailer": "^6.9.1",
+    "nodemailer": "^6.9.4",
     "nookies": "^2.5.2",
     "postcss-loader": "^7.2.4",
     "react": "^17.0.2",
@@ -101,6 +102,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "sass-resources-loader": "^2.2.5",
     "svg-sprite-loader": "^4.3.0",
+    "ts-node": "^10.9.1",
     "webpack-filter-warnings-plugin": "^1.2.1"
   }
 }

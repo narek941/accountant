@@ -27,7 +27,7 @@ const VacanciesForm = ({ handleBack }) => {
     experience,
   }) => {
     axiosInstance
-      .post('/api/sendEmail', {
+      .post('/api/api_four', {
         email,
         fullName: name,
         phoneNumber,
