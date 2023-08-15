@@ -4,6 +4,7 @@ import { HelmetLayout } from 'layouts/index';
 import { HomeContainer } from 'containers/index';
 
 const HomePage = () => {
+  console.log(process.env) 
   return (
     <HelmetLayout>
       <HomeContainer />
