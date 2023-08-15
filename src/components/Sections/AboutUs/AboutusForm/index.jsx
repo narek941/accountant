@@ -23,7 +23,7 @@ const AboutusForm = () => {
 
   const handleContactUsForm = ({ email, name, phoneNumber, interests }) => {
     axiosInstance
-      .post('/api/sendEmail', {
+      .post('/api/api_four/', {
         email,
         fullName: name,
         phoneNumber,
