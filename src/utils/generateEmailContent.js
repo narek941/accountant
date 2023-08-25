@@ -37,8 +37,8 @@ const generateEmailContent = (data) => {
         </div>
         <div style="background: linear-gradient(90deg, #4CAF50, #67D5B5); color: white; padding: 20px; border-radius: 10px 10px 0 0; text-align: center; display:flex; justify-content:center">
             <h2>New message from Website</h2>
+            </div>
             <h3>${title}</h3>
-        </div>
         <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 7px;">
             ${htmlContent}
         </div>
