@@ -30,6 +30,7 @@ const CoursesForm = ({ handleBack }) => {
   }) => {
     axiosInstance
       .post('/api/api_four', {
+        header: 'Course',
         email,
         fullName: name,
         phoneNumber,
