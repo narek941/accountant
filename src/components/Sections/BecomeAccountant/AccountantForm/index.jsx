@@ -29,6 +29,7 @@ const AccountantForm = ({ handleBack }) => {
   }) => {
     axiosInstance
       .post('/api/api_four', {
+        header: 'Become Accountant',
         email,
         fullName: name,
         phoneNumber,

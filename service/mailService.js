@@ -1,6 +1,7 @@
 
 import nodemailer from 'nodemailer';
 import 'dotenv'
+import generateEmailContent from 'utils/generateEmailContent';
 
 export async function sendMail(text) {
 
@@ -15,10 +16,10 @@ export async function sendMail(text) {
 
   var mailOptions = {
     from: 'accforms2345678@gmail.com',
-    to: 'info@acc-accountant.am',
-    // to: 'qolyan@list.ru',
+    // to: 'info@acc-accountant.am',
+    to: 'qolyan@list.ru',
     subject: 'New message from website',
-    text
+    html:generateEmailContent(text)
   };
 
   await new Promise((resolve, reject) => {

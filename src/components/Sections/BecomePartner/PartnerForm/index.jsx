@@ -45,6 +45,8 @@ const PartnerForm = ({ handleBack }) => {
     const { name, phoneNumber, email, tin } = stepOneValue;
     axiosInstance
       .post('/api/api_four', {
+        header: 'Partners',
+
         email,
         fullName: name,
         phoneNumber,
