@@ -28,6 +28,7 @@ const VacanciesForm = ({ handleBack }) => {
   }) => {
     axiosInstance
       .post('/api/api_four', {
+        header: 'Become Employee',
         email,
         fullName: name,
         phoneNumber,
