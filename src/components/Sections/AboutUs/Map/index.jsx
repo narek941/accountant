@@ -9,8 +9,8 @@ import {
 import { mapStyles } from 'utils/index';
 
 const location = {
-  lat: 40.1950407,
-  lng: 44.4952705,
+  lat: 40.19873974498302, 
+  lng: 44.48864377892839,
 };
 
 const InjectableGoogleMap = () => (
