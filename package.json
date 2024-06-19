@@ -48,6 +48,7 @@
     "moment": "^2.29.1",
     "next": "^12.3.4",
     "next-i18next": "^7.0.1",
+    "next-offline": "^5.0.5",
     "next-optimized-images": "^2.6.0",
     "next-pwa": "^5.2.20",
     "next-redux-wrapper": "^6.0.2",
@@ -82,7 +83,7 @@
     "shortid": "^2.2.15",
     "style-loader": "^3.3.2",
     "use-mobile-detect-hook": "^1.0.4",
-    "webpack": "5.92.0",
+    "webpack": "^5.79.0",
     "websocket": "^1.0.34",
     "yup": "0.32.11"
   },
