@@ -83,7 +83,7 @@
     "shortid": "^2.2.15",
     "style-loader": "^3.3.2",
     "use-mobile-detect-hook": "^1.0.4",
-    "webpack": "^5.79.0",
+    "webpack": "5.92.0",
     "websocket": "^1.0.34",
     "yup": "0.32.11"
   },
