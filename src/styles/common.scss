@@ -41,6 +41,7 @@
 
     @media (max-width: 568px) {
       padding: 56px 0;
+      min-height: unset;
     }
   }
   canvas {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
-
+import useWindowSize from 'hooks/useWindowSize';
 import {
   LOCATION_LINK,
   PHONE_NUMBER_LINK,
@@ -32,6 +32,7 @@ const FooterContainer = () => {
   const isOpenHandler = () => setIsOpen(!isOpen);
   const targetBlank = '_blank';
   const isNextNull = !activeIndexObj.next;
+  const { isDesktop } = useWindowSize();
 
   const handleDisable = () => {
     setIsDisable(true);
@@ -69,10 +70,10 @@ const FooterContainer = () => {
     <footer className={styles.container}>
       <div
         className={classNames(`container ${styles.wrapper}`, {
-          [styles.wrapper_reverse]: isOpen,
+          [styles.wrapper_reverse]: isOpen || !isDesktop,
         })}
       >
-        {!isOpen && (
+        {!isOpen && isDesktop && (
           <div className={styles.routes}>
             <div className={styles.routes__item}>
               <span>{activeIndexObj.index ? checkedIndex : '--'}</span>
@@ -99,7 +100,7 @@ const FooterContainer = () => {
         )}
         <div
           className={classNames(styles.routes, {
-            [styles.wrapper__animation]: isOpen,
+            [styles.wrapper__animation]: isOpen || !isDesktop,
           })}
         >
           <div
@@ -135,7 +136,7 @@ const FooterContainer = () => {
         </div>
         <div
           className={classNames(styles.routes, {
-            [styles.wrapper__animation]: isOpen,
+            [styles.wrapper__animation]: isOpen || !isDesktop,
           })}
         >
           <div className={styles.routes__item}>
@@ -155,16 +156,18 @@ const FooterContainer = () => {
           </div>
         </div>
 
-        <div
-          className={classNames(styles.wrapper__switcher, {
-            [styles.wrapper__switcher_active]: isOpen,
-          })}
-        >
-          <ArrowIcon
-            onClick={isOpenHandler}
-            className={styles.wrapper__switcher_close}
-          />
-        </div>
+        {isDesktop && (
+          <div
+            className={classNames(styles.wrapper__switcher, {
+              [styles.wrapper__switcher_active]: isOpen,
+            })}
+          >
+            <ArrowIcon
+              onClick={isOpenHandler}
+              className={styles.wrapper__switcher_close}
+            />
+          </div>
+        )}
       </div>
     </footer>
   );
