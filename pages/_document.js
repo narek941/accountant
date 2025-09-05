@@ -18,6 +18,10 @@ export default class extends Document {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
           />
+          <meta
+            name="google-site-verification"
+            content="UNVASQUka0sOHQd8oOi0_Z8GkE25BXAyeMiiQp-jMlM"
+          />
         </Head>
         <body>
           <Main />
