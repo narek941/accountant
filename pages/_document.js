@@ -20,7 +20,7 @@ export default class extends Document {
           />
           <meta
             name="google-site-verification"
-            content="UNVASQUka0sOHQd8oOi0_Z8GkE25BXAyeMiiQp-jMlM"
+            content="wBhc0DPwuglJI3u6Atuczxwwc4sRaao-9F8cTVeoUtM"
           />
         </Head>
         <body>
